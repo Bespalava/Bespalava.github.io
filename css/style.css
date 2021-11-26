@@ -50,14 +50,36 @@ body.cv
 .cv-skills{
     padding-bottom: 30px;
 }
-.cv-contacts,
-.cv-contacts a
-{
-    color: #ffffff;
-}
+
 .cv-skills-list{
     color: #ffffff;
 }
+.cv-contacts,
+.cv-contacts a{
+    color: #ffffff;
+    
+}
+.contacts-link{
+    border-bottom: 1px solid #ffffff;
+}
+.contacts-list{
+    list-style: none;
+    padding: 0;
+}
+.contacts-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+}
+.contacts-item img{
+    width: 40px;
+    margin-right: 10px;
+}
+.contacts-linkimg{
+    border: none;
+}
+
+
 /* .right */
 .block-right .cv-sec{
     padding-top: 15px;
@@ -71,6 +93,13 @@ body.cv
 }
 .cv-h2-white{
     color: #ffffff;
+}
+
+.cv-table-row:nth-child(2n){
+    background-color: #e6e6e6;
+}
+.cv-table-td{
+    padding: 15px 20px;
 }
 
 
@@ -88,6 +117,7 @@ body.cv
     }       
 }
 
+/* adaptive */
 @media (min-width: 1200px){
     .container{
         max-width: 1100px;
@@ -105,10 +135,11 @@ body.cv
     
     .cv-table-row{
         display: flex;
-        padding: 7px 0;
     }
     .cv-table-td:nth-child(1){
         width: 30%;
+        max-width: 150px;
+        /* border-right: 1px solid #3b3b3b; */
     } 
     .cv-table-td:nth-child(2){
         width: 70%;
@@ -131,14 +162,27 @@ body.cv
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .collapsible:hover {
+  .active, 
+  .collapsible:hover {
     background-color: #ccc;
   }
   
   /* Style the collapsible content. Note: hidden by default */
   .content {
     padding: 0 18px;
-    display: none;
+    max-height: 0;
+    display: flex;
     overflow: hidden;
+    transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
+  }
+
+  .button-style {
+   
+  
+    text-align: center;
+    text-decoration: none;
+   
+    font-size: 16px;
+  
   }
