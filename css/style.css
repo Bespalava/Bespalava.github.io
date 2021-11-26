@@ -139,7 +139,6 @@ body.cv
     .cv-table-td:nth-child(1){
         width: 30%;
         max-width: 150px;
-        /* border-right: 1px solid #3b3b3b; */
     } 
     .cv-table-td:nth-child(2){
         width: 70%;
@@ -164,7 +163,7 @@ body.cv
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, 
   .collapsible:hover {
-    background-color: #ccc;
+    background-color: #e6e6e6;
   }
   
   /* Style the collapsible content. Note: hidden by default */
@@ -179,7 +178,6 @@ body.cv
 
   .button-style {
    
-  
     text-align: center;
     text-decoration: none;
    
