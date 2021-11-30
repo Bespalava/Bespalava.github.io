@@ -6,20 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV</title>
   <link rel="stylesheet" href="./css/style.css">
- 
 </head>
 <body class="cv">
   <div class="container">
     <main class="cv-main">
-      <div class="block-left cv-grey">
-        <section class="cv-sec cv-photoname cv-orange">
+      <div class="block-left cv-blue">
+        <section class="cv-sec cv-photoname">
           <img class="cv-photo" src="img/photo.png" alt="Yuliya Bespalava">
-          <h2 class="cv-h1">Yuliya Bespalava</h2>
+          <h1 class="cv-h1">Yuliya Bespalava</h1>
         </section>
          <section class="cv-sec cv-contacts">
           <h2 class="cv-h2 cv-h2-white">Contacts</h2>
-          <ul class="contacts-list">
-            
+          <ul class="contacts-list">         
               <li class="contacts-item">
                 <a class="contacts-linkimg" href="mailto:ybespalava@gmail.com" title="gmail">
                   <img src="./img/gmail.png" alt="mail">
@@ -48,7 +46,6 @@
                 <img src="./img/skype.png" alt="skype">
                 <span>Julie Bespalava (@ybespalava_1)</span>
               </li>
-
           </ul>
         </section>
         <section class="cv-sec cv-skills">
@@ -56,13 +53,15 @@
           <ul class="cv-skills-list">
             <li class="cv-skills-item">JavaScript, jQuery</li>
             <li class="cv-skills-item">HTML, CSS (Bootstrap, Material)</li>
+            <li class="cv-skills-item">React</li>
             <li class="cv-skills-item">NodeJS</li>
             <li class="cv-skills-item">Python (django)</li>
             <li class="cv-skills-item">DB (SQL, PostgreSQL, MySQL)</li>
           </ul>
           <h2 class="cv-h2 cv-h2-white">Hobbies</h2>
           <ul class="cv-skills-list">
-
+            <li class="cv-skills-item">Swimming</li>
+            <li class="cv-skills-item">Painting</li>
           </ul>
         </section>
       </div>
@@ -75,17 +74,16 @@
           </div>
         </section>
         <section class="cv-sec cv-experience">
-          <h2 class="cv-h2">Experience</h2>
-         
-          <button class="collapsible button-style">Job Section 1</button>
+          <h2 class="cv-h2">Experience</h2>       
+          <button class="collapsible"><b>«Amper» LLC </b> position: Software engineer</button>
           <div class="content">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
           </div>
-          <button class="collapsible">LLC «Bright Solutions»   Software developer</button>
+          <button class="collapsible line-st"><b>«Bright Solutions» LLC </b> position: Software engineer</button>
           <div class="content">
             <p>Participation in software development projects for government agencies as a Delphi programmer: working in IDE Delphi 10.1 Berlin, PostgreSQL, supporting tools: SAP Power designer 16.6, SVN 1.13, Jira.</p>
           </div>
-          <button class="collapsible">LLC «IT-Lite»     Software developer</button>
+          <button class="collapsible"><b>«IT-Lite» LLC </b>position: Software engineer</button>
           <div class="content">
             <ul>
               <li>development software according to the requirements of the company;</li>
@@ -94,49 +92,34 @@
               <li>wide acquaintance with extension technology 1с.</li>
             </ul>
           </div>
-          <button class="collapsible">Job Section 4</button>
+          <button class="collapsible line-st"><b>«Fly Fish Soft» LLC </b>position: Software engineer</button>
+          <div class="content">
+            <p>Business process automation for B2B. Development of new and revision of the necessary modules for existing programs. Building software systems based on 1C 8.3 and synchronization with sites in Python. Transfer of client companies to more recent versions of 1C. Actual developments on the implementation of the ESCF and denomination for all versions of the 1C platform.</p>
+          </div>
+          <button class="collapsible"><b>«Primum» LLC </b>position: Software engineer</button>
+          <div class="content">
+            <p>Maintenance of the project of operational accounting of cargo transportation under the control of Embacadero Rad Studio (Delphi XE5, XE7). Administration of databases running SQL Server 2008 / 2012. Participation as a project manager in the development of a new application for freight accounting: Visual studio 2013 (.NET MVC), version control: TFS.</p>
+          </div>
+          <button class="collapsible line-st"><b>«Evroset» LLC </b>position: Software engineer</button>
           <div class="content">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
-          <button class="collapsible">Job Section 5</button>
-          <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <button class="collapsible">Job Section 6</button>
-          <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-
-          <script>
-          let coll = document.getElementsByClassName("collapsible");
-                    
-            for (let i = 0; i < coll.length; i++) {
-              coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                let content = this.nextElementSibling;
-                if (content.style.maxHeight){
-                  content.style.maxHeight = null;
-                } else {
-                  content.style.maxHeight = content.scrollHeight + "px";
-                } 
-              })
-            }
-          </script>
        
         </section>
         <section class="cv-sec cv-education">
           <h2 class="cv-h2">Education</h2>
           <div class="cv-table">
             <div class="cv-table-row">
-              <div class="cv-table-td">2004 — 2010</div>
-              <div class="cv-table-td"> 
-                <b> University </b> <br>sdafdskbxfggkok <br> 111321515
+              <div class="cv-table-td">2011 — 2013</div>
+              <div class="cv-table-td">
+                <b>Minsk State Linguistic University</b> <br><b>Speciality:</b> Modern foreign language <br> <b>Qualification:</b> Translator
               </div>
             </div>
             <div class="cv-table-row">
-              <div class="cv-table-td">2010 — 2013</div>
-              <div class="cv-table-td">
-                <b>University2</b> <br>sdafdskbxfggkok <br> 111321515
+              <div class="cv-table-td">2004 — 2010</div>
+              <div class="cv-table-td"> 
+                <b> Belarusian National Technical University </b> <br><b>Faculty:</b> Information Technologies and Robotics <br> <b>Speciality:</b> Information technologies software
+                <br> <b>Qualification:</b> Software engineer
               </div>
             </div>
           </div>
@@ -146,27 +129,28 @@
           <h2 class="cv-h2">Courses</h2>
           <div class="cv-table">
             <div class="cv-table-row">
-              <div class="cv-table-td">2016</div>
+              <div class="cv-table-td">2020</div>
               <div class="cv-table-td"> 
-                <b> counnnnn </b> <br>sdafdskbxfggkok description
+                <b>Coding school «TeachMeSkills»</b> <br>Front-End Developer <br>Description: 
               </div>
             </div>
             <div class="cv-table-row">
               <div class="cv-table-td">2017</div>
               <div class="cv-table-td">
-                <b>cjurvsddsc</b> <br>sdafdskbxfggkok description
+                <b>Сenter for learning technologies</b> <br>Python Developer <br>Description: Object oriented programming,
+                data processing, django framework.
               </div>
             </div>
             <div class="cv-table-row">
-              <div class="cv-table-td">2020</div>
+              <div class="cv-table-td">2017</div>
               <div class="cv-table-td">
-                <b>cjurvsddsc</b> <br>sdafdskbxfggkok description
+                <b>Training Centre «MSLU Evening Courses»</b> <br>German language
               </div>
             </div>
           </div>
         </section>
 
-        <section class="cv-sec cv-english">
+        <section class="cv-sec cv-laguages">
           <h2 class="cv-h2">Languages</h2>
           <div class="cv-text">
             <ul>
@@ -175,6 +159,9 @@
             <ul>
               <li><b>German:</b> Pre-intermediate (A2)</li>
             </ul> 
+            <ul>
+              <li><b>Polish:</b> Elementary (A1)</li>
+            </ul>
           </div>
         </section>
       </div>       
@@ -182,5 +169,20 @@
     </main>
     
   </div>
+  <script>
+    let coll = document.getElementsByClassName("collapsible");
+              
+      for (let i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          let content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        })
+      }
+  </script>
 </body>
 </html>
