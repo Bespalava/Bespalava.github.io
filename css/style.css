@@ -6,6 +6,13 @@ body.cv
     font-family: 'Open Sans', sans-serif;
     color: #3b3b3b;
 }
+
+body.cv a{
+    text-decoration: none;
+}
+body.cv a:hover{ 
+    border: none;
+}
 .cv-h1, .cv-h2{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -15,11 +22,9 @@ body.cv
     margin-left: auto;
     padding: 0 15px;
 }
-.cv-orange{
-    background-color: #ecb830;
-}
-.cv-grey{
-    background-color: #3b3b3b;
+
+.cv-blue{
+   background-color: #3b558d;
 }
 .cv-white{
     background-color: #f1f1ef;
@@ -30,16 +35,16 @@ body.cv
 .cv-h2{
     margin-bottom: 15px;
     padding-bottom: 7px;
-    border-bottom: 1px solid #ecb830;
+    border-bottom: 1px solid royalblue;
 }
-/* .left */
+/* left */
 .cv-photoname{
     padding: 30px;
 }
 .cv-h1{
-    margin: 10px 0;
-    font-size: 2em;
-    color: #010000;
+    margin: 10px 20px;
+    font-size: 1,5em;
+    color: thistle;
 }
 .cv-photo{
     max-width: 100%;
@@ -80,7 +85,7 @@ body.cv
 }
 
 
-/* .right */
+/* right */
 .block-right .cv-sec{
     padding-top: 15px;
     padding-bottom: 15px;
@@ -94,7 +99,6 @@ body.cv
 .cv-h2-white{
     color: #ffffff;
 }
-
 .cv-table-row:nth-child(2n){
     background-color: #e6e6e6;
 }
@@ -120,7 +124,7 @@ body.cv
 /* adaptive */
 @media (min-width: 1200px){
     .container{
-        max-width: 1100px;
+        max-width: 1050px;
     }
     .cv-main{
         display: flex;
@@ -146,7 +150,6 @@ body.cv
     
 }
 
-
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
     background-color: #eee;
@@ -162,7 +165,7 @@ body.cv
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, 
-  .collapsible:hover {
+  .collapsible:hover { 
     background-color: #e6e6e6;
   }
   
@@ -174,13 +177,4 @@ body.cv
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
-  }
-
-  .button-style {
-   
-    text-align: center;
-    text-decoration: none;
-   
-    font-size: 16px;
-  
   }
