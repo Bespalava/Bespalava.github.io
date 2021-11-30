@@ -55,9 +55,10 @@ body.cv a:hover{
 .cv-skills{
     padding-bottom: 30px;
 }
-
 .cv-skills-list{
     color: #ffffff;
+    list-style: none;
+    padding-left: 15px;
 }
 .cv-contacts,
 .cv-contacts a{
@@ -84,13 +85,29 @@ body.cv a:hover{
     border: none;
 }
 
+.cv-skills-item{
+    position: relative;
+    margin-bottom: 7px;
+}
+.cv-skills-item::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: calc(50% - 3px);
+    display: block;
+    height: 6px;
+    width: 6px;
+    background-color: royalblue;
+    border-radius: 100%;
+}
+
 
 /* right */
 .block-right .cv-sec{
     padding-top: 15px;
     padding-bottom: 15px;
 }
-.block-right .cv-sec.cv-english{
+.block-right .cv-sec.cv-laguages{
     padding-bottom: 30px;
 }
 .block-right .cv-sec.cv-summary{
@@ -150,6 +167,7 @@ body.cv a:hover{
     
 }
 
+  
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
     background-color: #eee;
@@ -160,7 +178,8 @@ body.cv a:hover{
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 16px;
+    text-rendering: auto;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -177,4 +196,7 @@ body.cv a:hover{
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
+  }
+  .line-st{ 
+    background-color: #e6e6e6;
   }
