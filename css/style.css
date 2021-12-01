@@ -141,7 +141,7 @@ body.cv a:hover{
 /* adaptive */
 @media (min-width: 1200px){
     .container{
-        max-width: 1050px;
+        max-width: 950px;
     }
     .cv-main{
         display: flex;
